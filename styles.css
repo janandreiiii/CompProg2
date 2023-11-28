@@ -1,0 +1,109 @@
+/* styles.css */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Navbar styling */
+nav.navbar {
+  background-color: #6A2E35; /* Dark background color */
+}
+
+nav.navbar a.navbar-brand,
+nav.navbar a.nav-link {
+  color: #ffffff; /* White text color for the brand and links */
+}
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+  /* Push the content down to make room for the fixed navbar */
+  body {
+    padding-top: 56px;
+  }
+
+  /* Move the burger menu to the left */
+  button.navbar-toggler {
+    order: -1;
+  }
+
+  /* Style the burger menu icon */
+  button.navbar-toggler span.icon-bar {
+    background-color: #ffffff; /* White color for the burger menu icon bars */
+  }
+}
+
+a {
+  color: black;
+}
+
+img.carousel {
+  width: 10px;
+}
+
+a.btn.btn-primary {
+  background-color: #6A2E35;
+  border: none;
+}
+
+div.container.mt-5 {
+  border-bottom: 2px solid lightslategray;
+}
+
+h1.times {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-brand {
+  max-width: 300px; /* Adjust based on your preference */
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+a.navbar-toggler {
+  order: -1;
+}
+
+.js-warning {
+  display: none;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: #9b1c31;
+  color: #ffffff;
+  text-align: inherit;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* GitHub icon styles */
+.github-icon {
+  font-size: 24px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+p6.date {
+  color: grey;
+  font-size: small;
+}
+h2.times {
+  font-family: 'Times New Roman', Times, serif;
+}
