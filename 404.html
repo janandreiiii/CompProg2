@@ -25,7 +25,7 @@
         .error-code {
             font-size: 120px;
             font-weight: bold;
-            color: #dc3545;
+            color: #721c24;
         }
 
         .error-message {
@@ -38,12 +38,26 @@
         .back-home {
             margin-top: 20px;
         }
+
+        /* Newspaper Animation */
+        .newspaper-icon {
+            font-size: 40px;
+            animation: flyNewspaper 3s linear infinite;
+        }
+
+        @keyframes flyNewspaper {
+            0% { transform: translateX(0) rotate(0); }
+            50% { transform: translateX(50px) rotate(45deg); }
+            100% { transform: translateX(0) rotate(0); }
+        }
+        
     </style>
 </head>
 <body>
     <div class="error-container">
         <div class="error-code">404</div>
-        <div class="error-message">Not Found</div>
+        <div class="error-message">Oh snap! The newspaper flew away</div>
+        <i class="fas fa-newspaper newspaper-icon"></i>
         <p class="back-home"><a href="/" class="btn btn-primary"><i class="fas fa-home"></i> Back to Home</a></p>
     </div>
 
