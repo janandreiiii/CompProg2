@@ -1,9 +1,8 @@
-/**For Yumburger menu in Android */
+// For Yumburger menu in Android
 function toggleMenu() {
     const sideMenu = document.querySelector('.side-menu');
     sideMenu.classList.toggle('show');
 }
-    // 404.js
 
 // Check if the current page exists
 function checkPageExistence() {
@@ -23,3 +22,19 @@ function checkPageExistence() {
 
 // Run the check when the page loads
 window.onload = checkPageExistence;
+
+//Another beach depracated (will remove soon)
+// Check if JavaScript is enabled and remove the warning
+var jsDisabledWarning = document.getElementById('js-disabled-warning');
+if (jsDisabledWarning) {
+    jsDisabledWarning.style.display = 'none';
+}
+
+//popup
+function openPopup() {
+    document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}

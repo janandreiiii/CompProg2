@@ -1,12 +1,12 @@
 /* styles.css */
-
+/*Do not make changes unless you were instructed */
 body {
   font-family: 'Open Sans', sans-serif;
 }
 
 /* Navbar styling */
 nav.navbar {
-  background-color: #6A2E35; /* Dark background color */
+  background-color: #0078D4; /* Dark background color */
 }
 
 nav.navbar a.navbar-brand,
@@ -41,7 +41,7 @@ img.carousel {
 }
 
 a.btn.btn-primary {
-  background-color: #6A2E35;
+  background-color: #0078D4;
   border: none;
 }
 
@@ -54,9 +54,10 @@ h1.times {
 }
 
 .navbar-brand {
-  max-width: 300px; /* Adjust based on your preference */
+  max-width: 250px; /* Adjust based on your preference */
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
+  height: auto;
+  position: relative;
 }
 
 a.navbar-toggler {
@@ -76,7 +77,7 @@ a.navbar-toggler {
 
 /* Footer styles */
 footer {
-  background-color: #9b1c31;
+  background-color: #0078D4;
   color: #ffffff;
   text-align: inherit;
   padding: 20px 0;
@@ -106,4 +107,30 @@ p6.date {
 }
 h2.times {
   font-family: 'Times New Roman', Times, serif;
+}
+#js-disabled-warning {
+  display: none;
+  background-color: #f8d7da; /* Bootstrap's danger color */
+  color: #0078D4; /* Bootstrap's dark red color */
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+h1.logo {
+  font-size: medium;
+  font-family: 'Audiowide', cursive;
+}
+/* styles.css */
+.loading-spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
